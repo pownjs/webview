@@ -1,0 +1,38 @@
+{
+  "name": "pown-webview",
+  "version": "0.0.1",
+  "description": "Webview for Pown.js",
+  "main": "lib/index.js",
+  "bin": {
+    "pown-webview": "webview.js"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "webview": "POWN_ROOT=. pown webview",
+    "test": "true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pownjs/pown-webview.git"
+  },
+  "keywords": [
+    "webview"
+  ],
+  "author": "pdp",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pownjs/pown-webview/issues"
+  },
+  "homepage": "https://github.com/pownjs/pown-webview#readme",
+  "dependencies": {
+    "electron": "^1.7.11",
+    "pown-cli": "^0.3.0"
+  },
+  "pown": {
+    "commands": [
+      "lib/command.js"
+    ]
+  }
+}
