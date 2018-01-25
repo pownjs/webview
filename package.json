@@ -4,7 +4,7 @@
   "description": "Webview for Pown.js",
   "main": "lib/index.js",
   "bin": {
-    "pown-webview": "webview.js"
+    "pown-webview": "bin/webview.js"
   },
   "directories": {
     "lib": "lib"
