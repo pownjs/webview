@@ -1,17 +1,11 @@
 {
-  "name": "pown-webview",
-  "version": "0.0.2",
-  "description": "Webview for Pown.js",
+  "name": "@pown/webview",
+  "version": "2.0.0",
+  "description": "Pownage guaranteed",
   "main": "lib/index.js",
-  "bin": {
-    "pown-webview": "bin/webview.js"
-  },
-  "directories": {
-    "lib": "lib"
-  },
   "scripts": {
-    "webview": "POWN_ROOT=. pown webview",
-    "test": "true"
+    "webview": "POWN_ROOT=. pown-cli webview",
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -20,19 +14,22 @@
   "keywords": [
     "webview"
   ],
-  "author": "pdp",
+  "author": "pdp <pdp@gnucitizen.org>",
+  "contributors": [],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/pownjs/pown-webview/issues"
   },
   "homepage": "https://github.com/pownjs/pown-webview#readme",
+  "devDependencies": {
+    "@pown/cli": "^2.10.0"
+  },
   "dependencies": {
-    "electron": "^1.7.11",
-    "pown-cli": "^0.3.0"
+    "electron": "^4.0.4"
   },
   "pown": {
     "commands": [
-      "lib/command.js"
+      "lib/commands/webview.js"
     ]
   }
 }
