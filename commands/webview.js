@@ -4,19 +4,21 @@ exports.yargs = {
 
     builder: {
         proxyServer: {
-            alias: 'p',
             type: 'string',
             description: `Use a specified proxy server, which overrides the system setting.`
         },
 
+        proxyBypassList: {
+            type: 'string',
+            description: ` bypass the proxy server for the given semi-colon-separated list of hosts`
+        },
+
         noProxyServer: {
-            alias: 'n',
             type: 'boolean',
             description: `Don't use a proxy server and always make direct connections.`
         },
 
         ignoreCertificateErrors: {
-            alias: 'e',
             type: 'boolean',
             description: `Ignore certificate errors.`
         }
@@ -32,7 +34,11 @@ exports.yargs = {
         const args = []
 
         if (argv.proxyServer) {
-            args.push('--proxy-server')
+            args.push('--proxy-server', argv.proxyServer)
+        }
+
+        if (argv.proxyBypassList) {
+            args.push('--proxy-bypass-list', argv.proxyBypassList)
         }
 
         if (argv.noProxyServer) {

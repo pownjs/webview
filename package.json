@@ -29,7 +29,7 @@
   },
   "pown": {
     "commands": [
-      "lib/commands/webview.js"
+      "commands/webview.js"
     ]
   }
 }
