@@ -49,6 +49,8 @@ exports.yargs = {
             args.push('--ignore-certificate-errors')
         }
 
+        // TODO: add optional --user-data-dir=$(mktemp -d /tmp/google-chome.XXXXXXX)
+
         args.push(argv.url)
 
         await spawnAsync(electron, args, { stdio: 'inherit', shell: true })
