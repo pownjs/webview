@@ -3,22 +3,22 @@ exports.yargs = {
     describe: 'Webview',
 
     builder: {
-        proxyServer: {
+        'proxy-server': {
             type: 'string',
             description: `Use a specified proxy server, which overrides the system setting.`
         },
 
-        proxyBypassList: {
+        'proxy-bypass-list': {
             type: 'string',
             description: ` bypass the proxy server for the given semi-colon-separated list of hosts`
         },
 
-        noProxyServer: {
+        'no-proxy-server': {
             type: 'boolean',
             description: `Don't use a proxy server and always make direct connections.`
         },
 
-        ignoreCertificateErrors: {
+        'ignore-certificate-errors': {
             type: 'boolean',
             description: `Ignore certificate errors.`
         }

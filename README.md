@@ -71,10 +71,10 @@ pown webview <url>
 Webview
 
 Options:
-  --version                  Show version number  [boolean]
-  --help                     Show help  [boolean]
-  --proxyServer              Use a specified proxy server, which overrides the system setting.  [string]
-  --proxyBypassList            bypass the proxy server for the given semi-colon-separated list of hosts  [string]
-  --noProxyServer            Don't use a proxy server and always make direct connections.  [boolean]
-  --ignoreCertificateErrors  Ignore certificate errors.  [boolean]
+  --version                    Show version number  [boolean]
+  --help                       Show help  [boolean]
+  --proxy-server               Use a specified proxy server, which overrides the system setting.  [string]
+  --proxy-bypass-list            bypass the proxy server for the given semi-colon-separated list of hosts  [string]
+  --no-proxy-server            Don't use a proxy server and always make direct connections.  [boolean]
+  --ignore-certificate-errors  Ignore certificate errors.  [boolean]
 ```
