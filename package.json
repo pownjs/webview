@@ -4,8 +4,9 @@
   "description": "Pownage guaranteed",
   "main": "lib/index.js",
   "scripts": {
-    "webview": "POWN_ROOT=. pown-cli webview",
-    "test": "mocha"
+    "build": "true",
+    "test": "mocha",
+    "webview": "POWN_ROOT=. pown-cli webview"
   },
   "repository": {
     "type": "git",
@@ -25,7 +26,7 @@
     "@pown/cli": "^2.21.3"
   },
   "dependencies": {
-    "electron": "^9.0.5"
+    "electron": "^9.1.1"
   },
   "pown": {
     "commands": [
