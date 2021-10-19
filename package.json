@@ -23,10 +23,10 @@
   },
   "homepage": "https://github.com/pownjs/pown-webview#readme",
   "devDependencies": {
-    "@pown/cli": "^2.25.3"
+    "@pown/cli": "^2.35.0"
   },
   "dependencies": {
-    "electron": "^9.4.3"
+    "electron": "^15.2.0"
   },
   "pown": {
     "commands": [
